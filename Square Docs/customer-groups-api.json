@@ -1,0 +1,44 @@
+{
+	"name": "customer-groups-api",
+	"version": "0.0.1",
+	"path": "/v1/customers/groups",
+	"notes": "The Customer Groups API lets you create and manage customer groups to provide targeted promotions or take other customized actions based on customers' group memberships.",
+	"info": "https://developer.squareup.com/reference/square/customer-groups-api",
+	"endpoints": [
+		{
+			"name": "List customer groups",
+			"route": "/",
+			"type": "GET",
+			"notes": "Retrieves the list of customer groups of a business.",
+			"info": "https://developer.squareup.com/reference/square/customer-groups-api/list-customer-groups"
+		},
+		{
+			"name": "Create customer group",
+			"route": "/",
+			"type": "POST",
+			"notes": "Creates a new customer group for a business. The request must include the name value of the group.",
+			"info": "https://developer.squareup.com/reference/square/customer-groups-api/create-customer-group"
+		},
+		{
+			"name": "Delete customer group",
+			"route": "/{group_id}",
+			"type": "DELETE",
+			"notes": "Deletes a customer group as identified by the group_id value.",
+			"info": "https://developer.squareup.com/reference/square/customer-groups-api/delete-customer-group"
+		},
+		{
+			"name": "Retrieve customer group",
+			"route": "/{group_id}",
+			"type": "GET",
+			"notes": "Retrieves a specific customer group as identified by the group_id value.",
+			"info": "https://developer.squareup.com/reference/square/customer-groups-api/retrieve-customer-group"
+		},
+		{
+			"name": "Update customer group",
+			"route": "/{group_id}",
+			"type": "PUT",
+			"notes": "Updates a customer group as identified by the group_id value.",
+			"info": "https://developer.squareup.com/reference/square/customer-groups-api/update-customer-group"
+		}
+	]
+}

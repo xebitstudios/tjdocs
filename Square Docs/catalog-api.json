@@ -1,0 +1,100 @@
+{
+	"name": "catalog-api",
+	"version": "0.0.1",
+	"path": "/v1/catalog",
+	"notes": "The Catalog API allows you to manage your item catalog in Point of Sale, including items, variations, categories, discounts, taxes, modifiers, and more.",
+	"info": "https://developer.squareup.com/reference/square/catalog-api",
+	"endpoints": [
+		{
+			"name": "List catalog",
+			"route": "/list",
+			"type": "GET",
+			"notes": "Returns a list of CatalogObjects that includes all objects of a set of desired types (for example, all CatalogItem and CatalogTax objects) in the catalog.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/list-catalog"
+		},
+		{
+			"name": "Batch delete catalog objects",
+			"route": "/batch-delete",
+			"type": "POST",
+			"notes": "Deletes a set of CatalogItems based on the provided list of target IDs and returns a set of successfully deleted IDs in the response.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/batch-delete-catalog-objects"
+		},
+		{
+			"name": "Batch retrieve catalog objects",
+			"route": "/batch-retrieve",
+			"type": "POST",
+			"notes": "Returns a set of objects based on the provided ID.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/batch-retrieve-catalog-objects"
+		},
+		{
+			"name": "Batch upsert catalog objects",
+			"route": "/batch-upsert",
+			"type": "POST",
+			"notes": "Creates or updates up to 10,000 target objects based on the provided list of objects.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/batch-upsert-catalog-objects"
+		},
+		{
+			"name": "Create catalog image",
+			"route": "/images",
+			"type": "POST",
+			"notes": "Uploads an image file to be represented by a CatalogImage object linked to an existing CatalogObject instance.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/create-catalog-image"
+		},
+		{
+			"name": "Catalog info",
+			"route": "/info",
+			"type": "GET",
+			"notes": "Retrieves information about the Square Catalog API, such as batch size limits that can be used by the BatchUpsertCatalogObjects endpoint.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/catalog-info"
+		},
+		{
+			"name": "Upsert catalog object",
+			"route": "/object",
+			"type": "POST",
+			"notes": "Creates or updates the target CatalogObject.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/upsert-catalog-object"
+		},
+		{
+			"name": "Delete catalog object",
+			"route": "/object/{object_id}",
+			"type": "DELETE",
+			"notes": "Deletes a single CatalogObject based on the provided ID and returns the set of successfully deleted IDs in the response.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/delete-catalog-object"
+		},
+		{
+			"name": "Retrieve catalog object",
+			"route": "/object/{object_id}",
+			"type": "GET",
+			"notes": "Returns a single CatalogItem as a CatalogObject based on the provided ID.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/retrieve-catalog-object"
+		},
+		{
+			"name": "Search catalog objects",
+			"route": "/search",
+			"type": "POST",
+			"notes": "Searches for CatalogObject of any type by matching supported search attribute values, excluding custom attribute values on items or item variations, against one or more of the specified query expressions.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/search-catalog-objects"
+		},
+		{
+			"name": "Search catalog items",
+			"route": "/search-catalog-items",
+			"type": "POST",
+			"notes": "Searches for catalog items or item variations by matching supported search attribute values, including custom attribute values, against one or more of the specified query expressions.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/search-catalog-items"
+		},
+		{
+			"name": "Update item modifier lists",
+			"route": "/update-item-modifier-lists",
+			"type": "POST",
+			"notes": "Updates the CatalogModifierList objects that apply to the targeted CatalogItem without having to perform an upsert on the entire item.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/update-item-modifier-lists"
+		},
+		{
+			"name": "Update item taxes",
+			"route": "/update-item-taxes",
+			"type": "POST",
+			"notes": "Updates the CatalogTax objects that apply to the targeted CatalogItem without having to perform an upsert on the entire item.",
+			"info": "https://developer.squareup.com/reference/square/catalog-api/update-item-taxes"
+		}
+	]
+}

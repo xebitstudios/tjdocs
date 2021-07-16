@@ -1,0 +1,79 @@
+{
+	"name": "refunds-api",
+	"version": "0.0.1",
+	"path": "/v1/refunds",
+	"notes": "The Payments API lets developers take and manage payments",
+	"info": "https://developer.squareup.com/reference/square/payments-api",
+	"endpoints": [
+		{
+			"name": "List payments",
+			"route": "/",
+			"type": "GET",
+			"notes": "Retrieves a list of payments taken by the account making the request.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/list-payments"
+		},
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		},
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		},
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		}
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		},
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		},
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		}
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		},
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		},
+		{
+			"name": "",
+			"route": "/",
+			"type": "",
+			"notes": "",
+			"info": ""
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"name": "orders-api",
+	"version": "0.0.1",
+	"path": "/v1/orders",
+	"notes": "Get sales data for a Square merchant, itemize payments, push orders to POS, and more",
+	"info": "https://developer.squareup.com/reference/square/orders-api",
+	"endpoints": [
+		{
+			"name": "Batch retrieve orders",
+			"route": "/batch-retrieve",
+			"type": "POST",
+			"notes": "Retrieves a set of orders by their IDs. If a given order ID does not exist, the ID is ignored instead of generating an error",
+			"info": "https://developer.squareup.com/reference/square/orders-api/batch-retrieve-orders"
+		},
+		{
+			"name": "Create order",
+			"route": "/",
+			"type": "POST",
+			"notes": "Creates a new order that can include information about products for purchase and settings to apply to the purchase.",
+			"info": "https://developer.squareup.com/reference/square/orders-api/create-order"
+		},
+		{
+			"name": "Calculate order",
+			"route": "/calculate",
+			"type": "POST",
+			"notes": "Enables applications to preview order pricing without creating an order.",
+			"info": "https://developer.squareup.com/reference/square/orders-api/calculate-order"
+		},
+		{
+			"name": "Search orders",
+			"route": "/search",
+			"type": "POST",
+			"notes": "Search all orders for one or more locations. Orders include all sales, returns, and exchanges regardless of how or when they entered the Square ecosystem",
+			"info": "https://developer.squareup.com/reference/square/orders-api/search-orders"
+		},
+		{
+			"name": "Retrieve order",
+			"route": "/{order_id}",
+			"type": "GET",
+			"notes": "Retrieves an Order by ID.",
+			"info": "https://developer.squareup.com/reference/square/orders-api/retrieve-order"
+		},
+		{
+			"name": "Update order",
+			"route": "/{order_id}",
+			"type": "PUT",
+			"notes": "Updates an open order by adding, replacing, or deleting fields. Orders with a COMPLETED or CANCELED state cannot be updated.",
+			"info": "https://developer.squareup.com/reference/square/orders-api/update-order"
+		},
+		{
+			"name": "Pay order",
+			"route": "/{order_id}/pay",
+			"type": "POST",
+			"notes": "Pay for an order using one or more approved payments or settle an order with a total of 0.",
+			"info": "https://developer.squareup.com/reference/square/orders-api/pay-order"
+		}
+	]
+}

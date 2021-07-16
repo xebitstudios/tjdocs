@@ -1,0 +1,65 @@
+{
+	"name": "invoices-api",
+	"version": "0.0.1",
+	"path": "/v1/invoices",
+	"notes": "The Invoices API makes it easy for you to manage invoices.",
+	"info": "https://developer.squareup.com/reference/square/invoices-api",
+	"endpoints": [
+		{
+			"name": "List invoices",
+			"route": "/",
+			"type": "GET",
+			"notes": "Returns a list of invoices for a given location",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/list-invoices"
+		},
+		{
+			"name": "Create invoice",
+			"route": "/",
+			"type": "POST",
+			"notes": "Creates a draft invoice for an order created using the Orders API.",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/create-invoice"
+		},
+		{
+			"name": "Search invoices",
+			"route": "/search",
+			"type": "POST",
+			"notes": "Searches for invoices from a location specified in the filter.",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/search-invoices"
+		},
+		{
+			"name": "Delete invoice",
+			"route": "/{invoice_id}",
+			"type": "DELETE",
+			"notes": "Deletes the specified invoice. When an invoice is deleted, the associated order status changes to CANCELED.",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/delete-invoice"
+		},
+		{
+			"name": "Get invoice",
+			"route": "/{invoice_id}",
+			"type": "GET",
+			"notes": "Retrieves an invoice by invoice ID.",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/get-invoice"
+		},
+		{
+			"name": "Update invoice",
+			"route": "/{invoice_id}",
+			"type": "PUT",
+			"notes": "Updates an invoice by modifying fields, clearing fields, or both.",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/update-invoice"
+		},
+		{
+			"name": "Cancel invoice",
+			"route": "/{invoice_id}/cancel",
+			"type": "POST",
+			"notes": "Cancels an invoice. The seller cannot collect payments for the canceled invoice.",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/cancel-invoice"
+		},
+		{
+			"name": "Publish invoice",
+			"route": "/{invoice_id}/publish",
+			"type": "POST",
+			"notes": "Publishes the specified draft invoice. After an invoice is published, Square follows up based on the invoice configuration.",
+			"info": "https://developer.squareup.com/reference/square/invoices-api/publish-invoice"
+		}
+	]
+}

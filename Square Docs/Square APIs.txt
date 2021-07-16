@@ -1,0 +1,100 @@
+From https://developer.squareup.com/docs:
+-----------------------------------------
+Objects & Enums:
+----------------
+ -  https://developer.squareup.com/reference/square/objects
+
+React Square Payment Form
+--------------------------------
+ - https://github.com/square
+ - https://square.github.io/react-square-payment-form/docs/introduction
+
+APIs:
+-----
+1. Payments API - Accept payments (https://developer.squareup.com/reference/square/payments-api)
+2. Orders API - Create and track orders
+3. Invoices API
+4. Subscriptions API
+5. Catalog API - Manage a product catalog (https://developer.squareup.com/reference/square/catalog-api)
+6. Inventory API - Adjust Inventory
+7. Cards API
+8. Customers API - Organize customers
+9. Loyalty API
+10. Bookings API
+11. Gift Cards API
+12. Merchants API
+13. Locations API
+14. Team API
+15. Accounts API
+16. Cash Drawer API
+17. Disputes API
+18. Online API
+19. Authentication API
+20. Webhooks API
+21. Employees API
+22. Checkout API - https://developer.squareup.com/docs/checkout-api-overview
+23. Refunds API (https://developer.squareup.com/reference/square/refunds-api)
+
+API Documentation List: - https://github.com/square/square-java-sdk
+-----------------------
+Payments
+	Payments
+	Refunds
+	Disputes
+	Checkout
+	Apple Pay
+	Terminal
+Orders
+	Orders
+Subscriptions
+	Subscriptions
+Invoices
+	Invoices
+Items
+	Catalog
+	Inventory
+Customers
+	Customers
+	Customer Groups
+	Customer Segments
+Loyalty
+	Loyalty
+Bookings
+	Bookings
+Business
+	Merchants
+	Locations
+	Devices
+Team
+	Team
+	Employees
+	Labor
+	Cash Drawers
+Financials
+	Bank Accounts
+Online
+	Sites
+	Snippets
+Authorization APIs
+	Mobile Authorization
+	OAuth
+Deprecated APIs
+	V1 Employees
+	V1 Transactions
+	V1 Items
+	Transactions
+
+
+Development Tools:
+------------------
+1. Sixty3 Digital SDKs
+2. API Explorer
+3. Sample Apps
+
+Resources:
+----------
+1. News - Blog
+2. Community - Slack/Twitter
+3. Get Help - Support/Forums
+4. Video Tutorials - Youtube
+

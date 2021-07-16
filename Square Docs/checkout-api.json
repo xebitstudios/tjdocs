@@ -1,0 +1,16 @@
+{
+	"name": "checkout-api",
+	"version": "0.0.1",
+	"path": "/v1/locations",
+	"notes": "The Checkout API lets you create Square-hosted checkout webpages where your customers can pay for goods and services. Accept itemized payments on a Square-hosted webpage, no frontend experience required",
+	"info": "https://developer.squareup.com/reference/square/checkout-api",
+	"endpoints": [
+		{
+			"name": "Create checkout",
+			"route": "/{location_id}/checkouts",
+			"type": "POST",
+			"notes": "Links a checkoutId to a checkout_page_url that customers are directed to in order to provide their payment information using a payment processing workflow hosted on connect.squareup.com.",
+			"info": "https://developer.squareup.com/reference/square/checkout-api/create-checkout"
+		}
+	]
+}

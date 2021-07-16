@@ -1,0 +1,58 @@
+{
+	"name": "payments-api",
+	"version": "0.0.1",
+	"path": "/v1/payments",
+	"notes": "The Payments API lets developers take and manage payments",
+	"info": "https://developer.squareup.com/reference/square/payments-api",
+	"endpoints": [
+		{
+			"name": "List payments",
+			"route": "/",
+			"type": "GET",
+			"notes": "Retrieves a list of payments taken by the account making the request.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/list-payments"
+		},
+		{
+			"name": "Create payment",
+			"route": "/",
+			"type": "POST",
+			"notes": "Creates a payment using the provided source.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/create-payment"
+		},
+		{
+			"name": "Cancel payment",
+			"route": "/cancel",
+			"type": "POST",
+			"notes": "Cancels (voids) a payment identified by the idempotency key that is specified in the request.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/cancel-payment-by-idempotency-key"
+		},
+		{
+			"name": "Get payment",
+			"route": "/{payment_id}",
+			"type": "GET",
+			"notes": "Retrieves details for a specific payment.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/get-payment"
+		},
+		{
+			"name": "Update payment",
+			"route": "/{payment_id}",
+			"type": "PUT",
+			"notes": "Updates a payment with the APPROVED status.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/update-payment"
+		},
+		{
+			"name": "Cancel payment",
+			"route": "/{payment_id}/cancel",
+			"type": "POST",
+			"notes": "Cancels (voids) a payment.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/cancel-payment"
+		},
+		{
+			"name": "Complete payment",
+			"route": "/{payment_id}/complete",
+			"type": "POST",
+			"notes": "Completes (captures) a payment.",
+			"info": "https://developer.squareup.com/reference/square/payments-api/complete-payment"
+		}
+	]
+}

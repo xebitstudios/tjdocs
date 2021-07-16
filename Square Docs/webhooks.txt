@@ -1,0 +1,27 @@
+Square Webhooks (https://developer.squareup.com/docs/webhooks-overview)
+---------------
+
+Use Square webhooks to get notified about Connect API events at the time they occur. Square provides webhooks for real-time notification of Square API and Connect v1 events or Point of Sale payments.
+
+Square webhooks provide notifications for these Square API objects:
+------------------------------------------------------------------
+1. Bank Accounts
+2. Bookings
+3. Cards
+4. Catalog
+5. Customers
+6. Devices
+7. Disputes
+8. Gift Cards
+9. Inventory
+10. Invoices
+11. Labor
+12. Locations
+13. Loyalty
+14. OAuth
+15. Orders
+16. Payments and Refunds
+17. Subscriptions
+18. Team
+19. Terminal
+

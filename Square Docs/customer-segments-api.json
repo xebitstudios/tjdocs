@@ -1,0 +1,23 @@
+{
+	"name": "customers-segments-api",
+	"version": "0.0.1",
+	"path": "/v1/customers/segments",
+	"notes": "The Customer Segments API lets you retrieve information about segments available in the business account.",
+	"info": "https://developer.squareup.com/reference/square/customer-segments-api",
+	"endpoints": [
+		{
+			"name": "List customer segments",
+			"route": "/",
+			"type": "GET",
+			"notes": "Retrieves the list of customer segments of a business.",
+			"info": "https://developer.squareup.com/reference/square/customer-segments-api/list-customer-segments"
+		},
+		{
+			"name": "Retrieve customer segment",
+			"route": "/segments/{segment_id}",
+			"type": "GET",
+			"notes": "Retrieves a specific customer segment as identified by the segment_id value.",
+			"info": "https://developer.squareup.com/reference/square/customer-segments-api/retrieve-customer-segment"
+		}
+	]
+}

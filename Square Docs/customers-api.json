@@ -1,0 +1,44 @@
+{
+	"name": "customers-api",
+	"version": "0.0.1",
+	"path": "/v1/customers",
+	"notes": "The Customers API enables you to create and manage customer profiles, as well as search for customers based on various criteria (including customer group membership).",
+	"info": "https://developer.squareup.com/reference/square/customers-api",
+	"endpoints": [
+		{
+			"name": "List customers",
+			"route": "/",
+			"type": "GET",
+			"notes": "Lists customer profiles associated with a Square account.",
+			"info": "https://developer.squareup.com/reference/square/customers-api/list-customers"
+		},
+		{
+			"name": "Create customer",
+			"route": "/",
+			"type": "POST",
+			"notes": "Creates a new customer for a business.",
+			"info": "https://developer.squareup.com/reference/square/customers-api/create-customer"
+		},
+		{
+			"name": "Search customers",
+			"route": "/search",
+			"type": "POST",
+			"notes": "Searches the customer profiles associated with a Square account using a supported query filter.",
+			"info": "https://developer.squareup.com/reference/square/customers-api/search-customers"
+		},
+		{
+			"name": "Delete customer",
+			"route": "/{customer_id}",
+			"type": "DELETE",
+			"notes": "Deletes a customer profile from a business. This operation also unlinks any associated cards on file.",
+			"info": "https://developer.squareup.com/reference/square/customers-api/delete-customer"
+		},
+		{
+			"name": "Retrieve customer",
+			"route": "/{customer_id}",
+			"type": "GET",
+			"notes": "Returns details for a single customer.",
+			"info": "https://developer.squareup.com/reference/square/customers-api/retrieve-customer"
+		}
+	]
+}
